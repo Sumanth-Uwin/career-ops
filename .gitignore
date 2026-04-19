@@ -43,4 +43,13 @@ package-lock.json
 
 # Personal resume data
 *.zip
+*.zip.bak
 cv.md
+
+# Local config / personal details
+.mcp.json
+config/apply-details.txt
+
+# Local data files
+data/job-queue.md
+batch/tracker-additions/merged/
