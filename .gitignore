@@ -46,6 +46,11 @@ package-lock.json
 *.zip.bak
 cv.md
 
+# Python environments
+**/.venv/
+**/__pycache__/
+*.pyc
+
 # Local config / personal details
 .mcp.json
 config/apply-details.txt
