@@ -33,6 +33,14 @@ node_modules/
 
 # Claude Code local
 .claude/settings.local.json
+.claude/settings.json
 .claude/memory/
 career-dashboard
 package-lock.json
+
+# Binaries
+*.exe
+
+# Personal resume data
+*.zip
+cv.md

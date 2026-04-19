@@ -35,8 +35,9 @@ const CANONICAL_STATUSES = [
 ];
 
 const ALIASES = {
-  'evaluada': 'evaluated', 'condicional': 'evaluated', 'hold': 'evaluated', 'evaluar': 'evaluated', 'verificar': 'evaluated',
-  'aplicado': 'applied', 'enviada': 'applied', 'aplicada': 'applied', 'applied': 'applied', 'sent': 'applied',
+  'evaluada': 'evaluated', 'condicional': 'evaluated', 'hold': 'evaluated',
+  'evaluar': 'evaluated', 'verificar': 'evaluated',
+  'aplicado': 'applied', 'aplicada': 'applied', 'enviada': 'applied', 'sent': 'applied',
   'respondido': 'responded',
   'entrevista': 'interview',
   'oferta': 'offer',

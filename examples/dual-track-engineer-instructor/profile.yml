@@ -8,108 +8,90 @@
 # Copy this file to config/profile.yml and edit before using.
 
 candidate:
-  full_name: "Sam Rivera"
-  email: "sam@example.com"
-  phone: "+00-000-0000000"          # placeholder, replace with your real number
-  location: "Berlin, Germany"
-  linkedin: "linkedin.com/in/sam-rivera-example"
-  portfolio_url: "https://sam-rivera.example.dev"
-  github: "github.com/sam-rivera-example"
-  twitter: "https://x.com/sam_rivera_example"
+  full_name: "Sumanth Pabba"
+  email: "pabbasumanth8@gmail.com"
+  phone: "+1 4373299563"          # placeholder, replace with your real number
+  location: "Kanata, Canada"
+  linkedin: "https://www.linkedin.com/in/sumanth-pabba-690778168/"
+  portfolio_url: "https://sumanthpabba.pro/"
+  github: "https://github.com/Sumanth-Uwin"
+  twitter: null
 
 target_roles:
-  # North Star -- TWO primary tracks, not one.
   primary:
-    - "Senior AI Engineer"
-    - "Staff AI Engineer"
-    - "Senior Technical Instructor (AI/ML)"
-    - "Lead Curriculum Engineer"
-  # Archetypes -- note: TWO entries with fit: primary.
-  # The evaluator should pick whichever is closer to the JD at scoring time.
+    - "Full Stack Developer"
+    - "Frontend Developer"
+    - "Backend Developer"
+    - "Software Engineer"
+
   archetypes:
-    - name: "Senior AI Engineer"
-      level: "Senior/Staff"
+    - name: "Frontend Engineer"
+      level: "Entry > 3+ > 4+"
       fit: "primary"
-      track: "engineering"
-      sell_when: "JD emphasizes shipping production AI, agent infra, LangChain/LangGraph, eval systems, ownership of an AI subsystem"
-    - name: "Senior Technical Instructor (AI/ML)"
-      level: "Senior/Lead"
+      sell_when: "JD emphasizes React, Next.js, TypeScript, UI implementation, responsive design, component systems, accessibility, frontend performance, or close product/design collaboration"
+
+    - name: "Backend Engineer"
+      level: "Entry > 3+ > 4+ > 5+"
       fit: "primary"
-      track: "teaching"
-      sell_when: "JD emphasizes curriculum, cohort delivery, bootcamp/university lectureship, DevRel education, internal enablement, instructor-led training"
-    - name: "AI DevRel Engineer"
-      level: "Senior"
+      sell_when: "JD emphasizes APIs, databases, authentication, distributed systems, backend services, integrations, scalability, reliability, or server-side application logic"
+
+    - name: "Full Stack Engineer"
+      level: "Entry > 3+ > 4+"
+      fit: "primary"
+      sell_when: "JD wants someone who can build end-to-end features across frontend and backend, own product slices, move fast in startups, and work across UI, API, and database layers"
+
+    - name: "Software Engineer"
+      level: "Entry > 3+"
       fit: "secondary"
-      track: "hybrid"
-      sell_when: "JD wants someone who can ship demos, write docs, AND speak at events / run workshops -- the natural dual-track landing zone"
-    - name: "Head of AI Education / Curriculum Lead"
-      level: "Lead/Manager"
-      fit: "secondary"
-      track: "teaching"
-      sell_when: "JD wants ownership of an entire curriculum, hiring + managing instructors, working with industry partners"
-    - name: "Forward Deployed AI Engineer"
-      level: "Senior"
+      sell_when: "JD is broad and generalist, uses generic software engineer wording, and does not lean strongly frontend-only or backend-only"
+
+    - name: "Platform / API Engineer"
+      level: "3+ > 4+ > 5+"
       fit: "adjacent"
-      track: "engineering"
-      sell_when: "JD wants client-facing technical work, fast prototyping, customer enablement -- teaching skills become a differentiator here"
+      sell_when: "JD emphasizes internal tools, developer platforms, API design, CI/CD, infrastructure, performance, service ownership, or engineering productivity"
+
+    - name: "Application Engineer"
+      level: "Entry > 3+"
+      fit: "adjacent"
+      sell_when: "JD emphasizes shipping business features quickly, working closely with stakeholders, maintaining product applications, and balancing pragmatism over deep specialization"
 
 narrative:
-  # One-line headline. Names BOTH tracks. The "rare combination" is the value.
-  headline: "Senior AI engineer who also runs the curriculum -- 60K LOC in production, 5,200+ teaching hours, 80+ careers launched"
-  # Exit story bridges both tracks into one coherent reason for the move.
-  exit_story: "Spent 4 years running an AI subsystem at a knowledge-graph SaaS in parallel with leading the AI Engineering track at a Berlin bootcamp. Both missions are complete -- now optimizing for a single role that uses both sides, or for one side at full intensity if the team is right."
-  # Superpowers -- mix of engineering AND teaching to reflect the dual track.
+  headline: "Full stack developer with production experience across React, Node.js, Java, APIs, and cloud deployments"
+  exit_story: "Built software across internships, full-time roles, and freelance work spanning frontend, backend, and distributed systems. Now focused on frontend, backend, full stack, and software engineering roles across Canada where strong implementation, API design, and product delivery matter."
   superpowers:
-    - "Ship production AI systems end-to-end (LangChain, LangGraph, Neo4j, Redis)"
-    - "Design curriculum that produces hireable engineers (92% completion, 80+ placed)"
-    - "Explain hard technical material in plain language -- in two languages"
-    - "Run incident reviews and code reviews at scale without burning out the team"
-    - "Bridge engineering and education -- internal docs that people actually read"
-  # Proof points -- mix engineering AND teaching wins, marked by track.
+    - "Build end-to-end web applications across React, Next.js, Node.js, Java, and SQL"
+    - "Design and optimize REST APIs, backend workflows, and scalable data access layers"
+    - "Improve performance with measurable gains in frontend load time and backend throughput"
+    - "Ship reliably with CI/CD, Docker, Kubernetes, and cloud platforms"
+    - "Adapt resume emphasis by role: frontend, backend, or full stack"
   proof_points:
-    - name: "Knowledge-Graph SaaS AI subsystem"
-      url: "https://sam-rivera.example.dev/case-study-knowledge-graph"
-      hero_metric: "60K LOC owned, 4M+ agent events/month, 38% latency cut"
-      track: "engineering"
-    - name: "agent-skills-kit"
-      url: "https://github.com/sam-rivera-example/agent-skills-kit"
-      hero_metric: "2,400+ GitHub stars, 11 contributors"
-      track: "engineering"
-    - name: "AI Engineering 4-Week Intensive (curriculum)"
-      url: "https://sam-rivera.example.dev/curriculum-ai-eng"
-      hero_metric: "6 cohorts, NPS 71, 92% completion, 80+ careers launched"
-      track: "teaching"
-    - name: "pplx-embed-local-runner"
-      url: "https://github.com/sam-rivera-example/pplx-embed-local-runner"
-      hero_metric: "610 stars, used in 3 lab exercises"
-      track: "hybrid"
-  # Optional dashboard / live demo
-  # dashboard:
-  #   url: "https://sam-rivera.example.dev/demo"
-  #   password: "demo-2026"
+    - name: "Kinaxis backend systems work"
+      url: ""
+      hero_metric: "42% API throughput improvement, 30% latency reduction, 1M+ daily transactions"
+      track: "backend"
+    - name: "Sterling web platform delivery"
+      url: ""
+      hero_metric: "30% faster UI load across 20+ pages, 28% higher enrollment workflow reliability"
+      track: "fullstack"
+    - name: "Freelance microservices delivery"
+      url: ""
+      hero_metric: "12+ microservices, 25+ secure REST APIs, 99.9% uptime"
+      track: "backend"
+    - name: "Fiserv enterprise APIs and dashboards"
+      url: ""
+      hero_metric: "40% better data delivery reliability, 100K+ record pagination support"
+      track: "fullstack"
 
 compensation:
-  # Default range = engineering range (typically higher).
-  target_range: "EUR 95K-130K"
-  currency: "EUR"
-  minimum: "EUR 80K"
-  location_flexibility: "Remote within EU; up to 1 week/month on-site in Berlin or any EU city"
-
-  # alternate_ranges -- non-standard but the dual-track pattern needs it.
-  # The evaluator should pick the range matching the detected archetype track.
-  alternate_ranges:
-    - track: "teaching"
-      target_range: "EUR 70K-95K"
-      minimum: "EUR 60K"
-      note: "Teaching roles pay less than engineering. Walk-away is lower because the work is intrinsically rewarding, but not unlimited."
-    - track: "hybrid"
-      target_range: "EUR 90K-120K"
-      minimum: "EUR 75K"
-      note: "DevRel and Forward-Deployed roles -- price between the two tracks."
+  target_range: "CAD 75K-105K"
+  currency: "CAD"
+  minimum: "CAD 65K"
+  location_flexibility: "Remote, hybrid, or on-site anywhere in Canada"
 
 location:
-  country: "Germany"
-  city: "Berlin"
-  timezone: "CET/CEST"
-  visa_status: "EU citizen, no sponsorship needed"
-  onsite_availability: "1 week/month in any EU city; full remote preferred"
+  country: "Canada"
+  city: "Kanata"
+  timezone: "America/Toronto"
+  visa_status: "Open work permit; authorized to work for any employer in Canada"
+  onsite_availability: "Open to remote, hybrid, and on-site roles anywhere in Canada"
+

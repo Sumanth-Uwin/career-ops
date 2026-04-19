@@ -69,3 +69,16 @@ location:
   visa_status: "No sponsorship needed"
   # For remote roles outside your country:
   # onsite_availability: "1 week/month in any city"
+
+# ── job-ops integration ────────────────────────────────────────────────────
+# Connect career-ops to your job-ops instance for the apply-queue workflow.
+# Run `/career-ops apply-queue` after exporting jobs from job-ops.
+jobops:
+  # Absolute path to job-ops SQLite database
+  db_path: "D:/WorkSpace/JobOps/job-ops/data/jobs.db"
+  # Minimum suitability score to include in export (0-100)
+  score_threshold: 70
+  # Export jobs discovered in the last N hours
+  lookback_hours: 24
+  # Absolute path to job-ops data directory (where PDFs are stored)
+  data_dir: "D:/WorkSpace/JobOps/job-ops/data"

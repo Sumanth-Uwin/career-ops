@@ -25,6 +25,7 @@ Determine the mode from `{{mode}}`:
 | `tracker` | `tracker` |
 | `pipeline` | `pipeline` |
 | `apply` | `apply` |
+| `apply-queue` | `apply-queue` |
 | `scan` | `scan` |
 | `batch` | `batch` |
 | `patterns` | `patterns` |
@@ -53,8 +54,9 @@ Available commands:
   /career-ops training  → Evaluate course/cert against North Star
   /career-ops project   → Evaluate portfolio project idea
   /career-ops tracker   → Application status overview
-  /career-ops apply     → Live application assistant (reads form + generates answers)
-  /career-ops scan      → Scan portals and discover new offers
+  /career-ops apply       → Live application assistant (reads form + generates answers)
+  /career-ops apply-queue → Process job-ops export queue (auto-fill + review each job)
+  /career-ops scan        → Scan portals and discover new offers
   /career-ops batch     → Batch processing with parallel workers
   /career-ops patterns  → Analyze rejection patterns and improve targeting
 
@@ -71,7 +73,7 @@ After determining the mode, load the necessary files before executing:
 ### Modes that require `_shared.md` + their mode file:
 Read `modes/_shared.md` + `modes/{mode}.md`
 
-Applies to: `auto-pipeline`, `oferta`, `ofertas`, `pdf`, `contacto`, `apply`, `pipeline`, `scan`, `batch`
+Applies to: `auto-pipeline`, `oferta`, `ofertas`, `pdf`, `contacto`, `apply`, `apply-queue`, `pipeline`, `scan`, `batch`
 
 ### Standalone modes (only their mode file):
 Read `modes/{mode}.md`

@@ -39,7 +39,7 @@ function validateStatus(status) {
     if (valid.toLowerCase() === lower) return valid;
   }
 
-  // Aliases
+  // Aliases (Spanish legacy + English variants)
   const aliases = {
     // Spanish → English
     'evaluada': 'Evaluated', 'condicional': 'Evaluated', 'hold': 'Evaluated', 'evaluar': 'Evaluated', 'verificar': 'Evaluated',

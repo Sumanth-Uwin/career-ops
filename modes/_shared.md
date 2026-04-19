@@ -48,12 +48,17 @@ Classify every offer into one of these types (or hybrid of 2):
 
 | Archetype | Key signals in JD |
 |-----------|-------------------|
-| AI Platform / LLMOps | "observability", "evals", "pipelines", "monitoring", "reliability" |
-| Agentic / Automation | "agent", "HITL", "orchestration", "workflow", "multi-agent" |
-| Technical AI PM | "PRD", "roadmap", "discovery", "stakeholder", "product manager" |
-| AI Solutions Architect | "architecture", "enterprise", "integration", "design", "systems" |
-| AI Forward Deployed | "client-facing", "deploy", "prototype", "fast delivery", "field" |
-| AI Transformation | "change management", "adoption", "enablement", "transformation" |
+| Frontend Engineer | "React", "Next.js", "TypeScript", "UI", "frontend", "accessibility", "design systems", "responsive", "CSS" |
+| Backend Engineer | "Node.js", "Java", "Spring Boot", "REST APIs", "microservices", "Kafka", "databases", "server-side", "distributed systems" |
+| Full Stack Engineer | "full stack", "end-to-end", "frontend and backend", "web applications", "product features", "API integration" |
+| Software Engineer | broad "software engineer" wording, implementation-heavy, mixed stack, no strong frontend-only or backend-only bias |
+| Platform / API Engineer | "platform", "API", "CI/CD", "Docker", "Kubernetes", "cloud", "developer tooling", "reliability", "performance" |
+| Application Engineer | "application developer", "implementation", "business applications", "stakeholders", "support", "feature delivery" |
+
+Before scoring fit, also classify:
+- **Seniority target:** Entry/New Grad, 1-3 years, 3+ years, 4+ years, or 5+ years
+- **Location fit:** Canada-only, remote-in-Canada, hybrid in Canada, on-site in Canada, or outside target geography
+- **Work authorization risk:** flag roles that require citizenship, permanent residency only, or explicitly exclude temporary residents
 
 After detecting archetype, read `modes/_profile.md` for the user's specific framing and proof points for that archetype.
 
@@ -69,6 +74,8 @@ After detecting archetype, read `modes/_profile.md` for the user's specific fram
 6. Generate a PDF without reading the JD first
 7. Use corporate-speak
 8. Ignore the tracker (every evaluated offer gets registered)
+9. Recommend roles outside the user's target geography without calling that out
+10. Ignore explicit work authorization restrictions in the JD
 
 ### ALWAYS
 
@@ -76,6 +83,8 @@ After detecting archetype, read `modes/_profile.md` for the user's specific fram
 1. Read cv.md, _profile.md, and article-digest.md (if exists) before evaluating
 1b. **First evaluation of each session:** Run `node cv-sync-check.mjs`. If warnings, notify user.
 2. Detect the role archetype and adapt framing per _profile.md
+2b. Penalize roles that require citizenship, PR-only status, or disallow temporary residents when the candidate is on an open work permit
+2c. Prefer Canada-based roles and remote roles explicitly open to candidates in Canada
 3. Cite exact lines from CV when matching
 4. Use WebSearch for comp and company data
 5. Register in tracker after evaluating
